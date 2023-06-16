@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XpsTest.App", "XpsTest.App\XpsTest.App.csproj", "{1B5C4814-CDB8-4421-BEC8-E80051C8AEED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XpsTest.Library", "XpsTest.Library\XpsTest.Library.csproj", "{CF1DDB4C-9D70-4534-BDD7-43A7C010803F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B5C4814-CDB8-4421-BEC8-E80051C8AEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B5C4814-CDB8-4421-BEC8-E80051C8AEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B5C4814-CDB8-4421-BEC8-E80051C8AEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B5C4814-CDB8-4421-BEC8-E80051C8AEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1DDB4C-9D70-4534-BDD7-43A7C010803F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1DDB4C-9D70-4534-BDD7-43A7C010803F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1DDB4C-9D70-4534-BDD7-43A7C010803F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1DDB4C-9D70-4534-BDD7-43A7C010803F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49993095-FD51-49FF-9AC7-4E5BCCE8643E}
+	EndGlobalSection
+EndGlobal

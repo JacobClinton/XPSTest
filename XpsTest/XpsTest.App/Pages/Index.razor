@@ -1,0 +1,23 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h3>Welcome to the Integer to Roman Numeral Converter!</h3>
+<p>Enter a number between 1 and 2000 in the input field on the left and click <b><i>Convert</i></b> to see its Roman numeral equivalent.</p>
+<p>Your result will appear in the output field on the right.</p>
+
+<EditForm Model="_model" OnValidSubmit="_model.Convert" OnInvalidSubmit="_model.Clear">
+    <DataAnnotationsValidator />
+    <ValidationMessage For="() => _model.InputValue" />
+    <div class="form">
+        <SfNumericTextBox TValue="int" @bind-Value="_model.InputValue" Placeholder="Input"/>
+        <SfButton Content="Convert" IsPrimary="true"/>
+        <SfTextBox Value="@_model.OutputValue" Placeholder="Output" Enabled="false"/>
+    </div>
+</EditForm>
+
+<p>When you click <b><i>Convert</i></b>, the application will translate your input into the corresponding Roman numeral. This is done by repeatedly subtracting the largest possible Roman numeral value, starting from the largest (M=1000), and appending the corresponding Roman numeral to the result. This process continues until there's no number left to convert.</p>
+
+@code {
+    private IntConverter _model = new ();
+}

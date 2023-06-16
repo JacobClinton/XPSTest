@@ -1,0 +1,29 @@
+﻿p {
+    font-size: 20px;
+}
+
+div.form {
+    display: flex;
+    gap: 20px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+div.form > ::deep button {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+}
+
+div.form ::deep input {
+    height: 100% !important;
+    font-size: 40px !important;
+    padding: 0 20px 5px !important;
+}
+
+@media (max-width: 1000px) {
+    div.form {
+        flex-wrap: wrap;
+        height: 210px;
+    }
+}
